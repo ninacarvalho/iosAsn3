@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class MyQuizResultViewController: UIViewController {
+class ResultViewController: UIViewController {
     
     // Property to receive the percentage of correct answers
     var correctPercentage: Float = 0.0
@@ -18,6 +18,6 @@ class MyQuizResultViewController: UIViewController {
         super.viewDidLoad()
         
         // Display the result
-        resultLabel.text = "You answered \(correctPercentage)% of questions correctly."
+        resultLabel.text = "You answered \(correctPercentage)% of questions \n correctly."
     }
 }
