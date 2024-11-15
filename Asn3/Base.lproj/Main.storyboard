@@ -154,7 +154,7 @@
                                 </items>
                             </navigationBar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xzg-NU-Mgd">
-                                <rect key="frame" x="0.0" y="769" width="393" height="44"/>
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem image="chevron.backward.2" catalog="system" id="AEh-5I-ehb">
@@ -178,15 +178,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="left" axis="vertical" spacing="2" id="odK-Ut-r7k">
+                            <stackView opaque="NO" contentMode="left" axis="vertical" alignment="top" spacing="2" id="odK-Ut-r7k">
                                 <rect key="frame" x="16" y="311" width="359" height="438"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="left" translatesAutoresizingMaskIntoConstraints="NO" id="pcu-dB-5Gb">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="108"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="108"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtQ-zy-Cpi" customClass="DLRadioButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="108"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="circlebadge" catalog="system"/>
                                                 <userDefinedRuntimeAttributes>
@@ -194,6 +194,7 @@
                                                     <userDefinedRuntimeAttribute type="image" keyPath="iconSelected" value="inset.filled.circle" catalog="system"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <action selector="optionButtonTapped:" destination="VMO-2U-YP0" eventType="touchUpInside" id="O0c-DE-rbo"/>
                                                     <outletCollection property="otherButtons" destination="1vv-pX-MYJ" id="jxa-2r-Rd6"/>
                                                     <outletCollection property="otherButtons" destination="4oT-E5-xaD" id="gOf-jg-hPB"/>
                                                     <outletCollection property="otherButtons" destination="bCV-H9-BEe" id="4yQ-0E-AcH"/>
@@ -202,44 +203,53 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQh-Fb-TtB">
-                                        <rect key="frame" x="0.0" y="110" width="359" height="108"/>
+                                        <rect key="frame" x="0.0" y="110" width="44.666666666666664" height="108"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vv-pX-MYJ" customClass="DLRadioButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="108"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="circlebadge" catalog="system"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="circlebadge" catalog="system"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="iconSelected" value="inset.filled.circle" catalog="system"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="optionButtonTapped:" destination="VMO-2U-YP0" eventType="touchUpInside" id="SGb-NR-N28"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nd8-6T-2EG">
-                                        <rect key="frame" x="0.0" y="220" width="359" height="108"/>
+                                        <rect key="frame" x="0.0" y="220" width="44.666666666666664" height="108"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oT-E5-xaD" customClass="DLRadioButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="108"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="circlebadge" catalog="system"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="circlebadge" catalog="system"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="iconSelected" value="inset.filled.circle" catalog="system"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="optionButtonTapped:" destination="VMO-2U-YP0" eventType="touchUpInside" id="wkE-jE-YeE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLN-fb-kzw">
-                                        <rect key="frame" x="0.0" y="330" width="359" height="108"/>
+                                        <rect key="frame" x="0.0" y="330" width="44.666666666666664" height="108"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCV-H9-BEe" customClass="DLRadioButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="108"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="circlebadge" catalog="system"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="circlebadge" catalog="system"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="iconSelected" value="inset.filled.circle" catalog="system"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="optionButtonTapped:" destination="VMO-2U-YP0" eventType="touchUpInside" id="lyp-Qw-obF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
